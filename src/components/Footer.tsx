@@ -19,24 +19,36 @@ const Footer = () => {
             <h3 className="text-xl font-bold mb-4">Link-uri Rapide</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#" className="hover:text-primary-foreground transition-[var(--transition-smooth)]">
+                <button 
+                  onClick={() => document.getElementById("news")?.scrollIntoView({ behavior: "smooth" })}
+                  className="hover:text-primary-foreground transition-[var(--transition-smooth)] cursor-pointer"
+                >
                   Știri
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#" className="hover:text-primary-foreground transition-[var(--transition-smooth)]">
+                <button 
+                  onClick={() => document.getElementById("matches")?.scrollIntoView({ behavior: "smooth" })}
+                  className="hover:text-primary-foreground transition-[var(--transition-smooth)] cursor-pointer"
+                >
                   Program Meciuri
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#" className="hover:text-primary-foreground transition-[var(--transition-smooth)]">
+                <button 
+                  onClick={() => document.getElementById("history")?.scrollIntoView({ behavior: "smooth" })}
+                  className="hover:text-primary-foreground transition-[var(--transition-smooth)] cursor-pointer"
+                >
                   Istorie
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#" className="hover:text-primary-foreground transition-[var(--transition-smooth)]">
-                  Contact
-                </a>
+                <button 
+                  onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                  className="hover:text-primary-foreground transition-[var(--transition-smooth)] cursor-pointer"
+                >
+                  Înapoi Sus
+                </button>
               </li>
             </ul>
           </div>
@@ -46,29 +58,37 @@ const Footer = () => {
             <h3 className="text-xl font-bold mb-4">Urmărește-ne</h3>
             <div className="flex gap-4">
               <a
-                href="#"
-                className="w-10 h-10 rounded-full bg-accent-foreground/10 hover:bg-primary flex items-center justify-center transition-[var(--transition-smooth)]"
+                href="https://facebook.com/dinamobucuresti"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-accent-foreground/10 hover:bg-primary hover:scale-110 flex items-center justify-center transition-all duration-300"
                 aria-label="Facebook"
               >
                 <Facebook size={20} />
               </a>
               <a
-                href="#"
-                className="w-10 h-10 rounded-full bg-accent-foreground/10 hover:bg-primary flex items-center justify-center transition-[var(--transition-smooth)]"
+                href="https://twitter.com/dinamobucuresti"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-accent-foreground/10 hover:bg-primary hover:scale-110 flex items-center justify-center transition-all duration-300"
                 aria-label="Twitter"
               >
                 <Twitter size={20} />
               </a>
               <a
-                href="#"
-                className="w-10 h-10 rounded-full bg-accent-foreground/10 hover:bg-primary flex items-center justify-center transition-[var(--transition-smooth)]"
+                href="https://instagram.com/dinamobucuresti"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-accent-foreground/10 hover:bg-primary hover:scale-110 flex items-center justify-center transition-all duration-300"
                 aria-label="Instagram"
               >
                 <Instagram size={20} />
               </a>
               <a
-                href="#"
-                className="w-10 h-10 rounded-full bg-accent-foreground/10 hover:bg-primary flex items-center justify-center transition-[var(--transition-smooth)]"
+                href="https://youtube.com/@dinamobucuresti"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-accent-foreground/10 hover:bg-primary hover:scale-110 flex items-center justify-center transition-all duration-300"
                 aria-label="YouTube"
               >
                 <Youtube size={20} />

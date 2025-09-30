@@ -226,7 +226,7 @@ const MatchCard = ({ match, index }: { match: Match; index: number }) => {
 
 const MatchSchedule = () => {
   return (
-    <section className="py-20 px-4 bg-background relative overflow-hidden">
+    <section id="matches" className="py-20 px-4 bg-background relative overflow-hidden scroll-mt-4">
       {/* Decorative Background Elements */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-20 left-10 w-72 h-72 bg-primary rounded-full blur-3xl"></div>

@@ -30,7 +30,7 @@ const newsItems = [
 
 const NewsSection = () => {
   return (
-    <section id="content" className="py-20 px-4 bg-secondary">
+    <section id="news" className="py-20 px-4 bg-secondary scroll-mt-4">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-5xl font-bold mb-4 text-foreground">

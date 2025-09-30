@@ -5,7 +5,7 @@ import clubLogo from "@/assets/club-logo.png";
 
 const Hero = () => {
   const scrollToContent = () => {
-    const element = document.getElementById("content");
+    const element = document.getElementById("news");
     element?.scrollIntoView({ behavior: "smooth" });
   };
 
@@ -35,10 +35,20 @@ const Hero = () => {
           Câinii Roșii • Peste 75 de Ani de Glorie
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button variant="hero" size="lg" className="text-lg">
+          <Button 
+            variant="hero" 
+            size="lg" 
+            className="text-lg"
+            onClick={() => document.getElementById("news")?.scrollIntoView({ behavior: "smooth" })}
+          >
             Ultimele Știri
           </Button>
-          <Button variant="outline" size="lg" className="text-lg bg-primary-foreground/10 backdrop-blur-sm border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/20">
+          <Button 
+            variant="outline" 
+            size="lg" 
+            className="text-lg bg-primary-foreground/10 backdrop-blur-sm border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/20"
+            onClick={() => document.getElementById("matches")?.scrollIntoView({ behavior: "smooth" })}
+          >
             Program Meciuri
           </Button>
         </div>
